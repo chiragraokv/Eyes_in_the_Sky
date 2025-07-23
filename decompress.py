@@ -1,0 +1,15 @@
+"""
+Use the following function to decompress the input
+"""
+
+import json
+import lzma
+import base64
+
+def decompress_matrix(b64_string):
+        compressed_bytes = base64.b64decode(b64_string)
+        matrix_bytes = lzma.decompress(compressed_bytes)
+        matrix_str = matrix_bytes.decode('utf-8')
+        original_list = json.loads(matrix_str)
+        # original list is a 1D list containig packed RGB values.
+        return original_list
