@@ -10,7 +10,12 @@ def decompress_matrix(b64_string):
         # original list is a 1D list containig packed RGB values.
         return original_list
 
-with open("sample_input.txt", "r") as file:
+with open("input_0.txt", "r") as file:
     compressed_lzma = file.read()
 packed_rgb = decompress_matrix(compressed_lzma)
+'''
+for hackerrank input the lzma compressed text using:  input().strip()
+whose output can be decompressed using the above function to get packed RGB data.
+NOTE: it is 100 x 100 image.
+'''
 print(f"The function gives a list of containing {len(packed_rgb)} elements. These are packed rgb values.\nAll the best\n ~ LaserHammer")
