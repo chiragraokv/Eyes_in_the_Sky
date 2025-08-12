@@ -11,6 +11,6 @@ The output of the function will be a 1D list containing the packed RGB values. T
 The placeholders (which are the **reference points identified**) are represented by orange color. R = 255, G = 165, B = 0.
 
 All the best.  
-For any doubt, DM: chiragraokv_30373 on Discord.
+For any doubt, DM: laserhammer_92 on Discord.
 
 – LaserHammer
